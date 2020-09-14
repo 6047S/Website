@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- SEO -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Import Stylesheets -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+<head>
+    <!-- SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Page info -->
-        <title>Team 6047S</title>
+    <!-- Import Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 
-    </head>
-    <body>
+    <!-- Page info -->
+    <title>Team 6047S</title>
 
-        <!-- Top Navbar -->
-        <!-- TODO: finalize Navbar-->
-        <div class="topnavMobile">
+</head>
 
+<body>
+
+    <!-- Top Navbar -->
+    <!-- TODO: finalize Navbar-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="github.html">GitHub</a>
+        <a href="robot.html">Robot / CAD</a>
+        <div class="dropdown">
+            <button class="dropbtn">Seasons
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="tt.html">Tower Takeover</a>
+                <a href="change.html">Change Up</a>
+            </div>
         </div>
-        <div class="parallax"></div>
-        <div class="contents" id="home">
-            <h1>Team 6047S</h1>
-            <h3>Westview Middle School</h3>
-            <p>We are a 8th grade <a href="http://vexrobotics.com/v5">VEX Robotics</a> team at Westview Middle School</p>
-            
-        </div>
-    </body>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>
+    </div>
+    <div class="parallax"></div>
+    <div class="contents" id="home">
+        <h1>Team 6047S</h1>
+        <h3>Westview Middle School</h3>
+        <p>We are a 8th grade <a href="http://vexrobotics.com/v5">VEX Robotics</a> team at Westview Middle School</p>
+
+    </div>
+    <script>
+        function openNav() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
 </html>
-
